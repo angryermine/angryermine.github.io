@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "munterra";
+  src: url("./fonts/munterra-munterra_regular.eot");
+  src: url("./fonts/munterra-munterra_regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/munterra-munterra_regular.woff") format("woff"),
+    url("./fonts/munterra-munterra_regular.woff2") format("woff2"),
+    url("./fonts/munterra-munterra_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "munterra";
+  letter-spacing: 0.5vw;
+  user-select: none;
+  background-color: #000;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  color: white;
+  font-size: 12.375vw;
+  text-align: center;
+  letter-spacing: 1.125vw;
+}
+
+#timer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 10vw;
+  margin-top: -2vh;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 19vw;
+}
+
+.time-text {
+  font-size: 3vw;
+}
+
+.video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
